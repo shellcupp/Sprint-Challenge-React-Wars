@@ -1,11 +1,16 @@
-import React from "react";
+import React from 'react';
 
-const CharacterCard = props => {
-    return(null
-        // <div>
-        // // <img alt ="" src={} />
-        // // <h2>{}</h2>
-        // </div>
+const CharacterCard = (props) => {
+    const {name, birth, height, hair, eyes} = props;
+
+    return (
+        <div>
+            <h2>{name}</h2>
+            <p>Born: {birth}</p>
+            <p>Height: {height}</p>
+            <p>Hair Color: {hair}</p>
+            <p>Eye Color: {eyes}</p>
+        </div>
     )
 }
 
