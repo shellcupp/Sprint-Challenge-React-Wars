@@ -1,6 +1,8 @@
-import React, {useState, useEffect} from 'react';
 import './App.css';
+
 import axios from "axios";
+import React, {useEffect, useState} from 'react';
+
 import CharacterCard from './CharacterCard';
 
 export default function CardInfo() {
@@ -13,14 +15,14 @@ export default function CardInfo() {
           setCharacter(response.data.results)
       })
       .catch(err => {
-          console.log('no data', err);
+    console.log('no data', err);
       })
   }, []);
 
   return (
       <div>
           {character.map((person, index) => {
-              return <CharacterCard
+      return < CharacterCard
               key={index}
               name={person.name}
               birth={person.birth_year}

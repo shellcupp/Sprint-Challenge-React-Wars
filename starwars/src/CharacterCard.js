@@ -14,22 +14,19 @@ const Seconddiv = styled.div`
 width:45%;
 `;
 
-const CharacterCard = (props) => {
-    const {name, birth, height, hair, eyes} = props;
+const CharacterCard =
+    (props) => {
+      const {name, birth, height, hair, eyes} = props;
 
-    return (
-        <WrapperDiv>
-        <Firstdiv>
-            <h2>{name}</h2>
+      return (<WrapperDiv><Firstdiv><h2>{name}</h2>
         </Firstdiv>
-        <Seconddiv>
-            <p>Born: {birth}</p>
+              <Seconddiv>
+              <p>Born: {birth}</p>
             <p>Height: {height}</p>
-            <p>Hair Color: {hair}</p>
+              <p>Hair Color: {hair}</p>
             <p>Eye Color: {eyes}</p>
-        </Seconddiv>
-        </WrapperDiv>
-    )
-}
+              </Seconddiv>
+        </WrapperDiv>)
+    }
 
 export default CharacterCard;
